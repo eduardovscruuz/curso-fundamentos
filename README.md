@@ -1,2 +1,2 @@
 # cursoFundamentos
-Curso de Fundamentos da programação realizado na plataforma Awari
+Curso de Fundamentos da Programação realizado na plataforma Awari
