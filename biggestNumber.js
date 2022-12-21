@@ -1,11 +1,11 @@
-function maiorNum(array) {    
+function biggestNumber(array) {    
 
-    var maior = array[0];
+    var biggest = array[0];
 
     for (let i = 0; i < array.length; i++) {
-        var atual = array[i];
-        if( atual > maior)
-        maior = atual;
+        var current = array[i];
+        if( current > biggest)
+        biggest = current;
     }
-    console.log(maior)
+    console.log(biggest)
 }

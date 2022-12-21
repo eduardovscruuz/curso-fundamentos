@@ -1,18 +1,18 @@
-function premiacao(nome,salario,vendas){
+function salesPrize(name,salary,sales){
     
-    let premio
+    let prize
     
-    if (vendas >= 1000 && vendas < 5000){
-        premio = 500}
+    if (sales >= 1000 && sales < 5000){
+        prize = 500}
         
-    else if (vendas >= 5000 && vendas < 7500){
-        premio = 700}
+    else if (sales >= 5000 && sales < 7500){
+        prize = 700}
         
-    else if (vendas >= 7500){
-        premio = 1000}
+    else if (sales >= 7500){
+        prize = 1000}
         
     else {
-        premio=0}
+        prize=0}
     
-    console.log("O salário de " + nome + " neste mês será de R$" + (salario + premio))
+    console.log(name +"'s salary this mounth will be $" + (salary + prize))
 }

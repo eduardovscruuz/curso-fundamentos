@@ -1,72 +1,72 @@
-class Carro{
-    constructor(modelo, placa, ano, cor, quilometragem, valor_diario, observacao) {
-        this.modelo = modelo;
-        this.placa = placa;
-        this.ano = ano;
-        this.cor = cor;
-        this.quilometragem = quilometragem;
-        this.valor_diario = valor_diario;
-        this.observacao = observacao;
+class Car{
+    constructor(model, plate, year, color, mileage, daily_value, observation) {
+        this.model = model;
+        this.plate = plate;
+        this.year = year;
+        this.color = color;
+        this.mileage = mileage;
+        this.daily_value = daily_value;
+        this.observation = observation;
     }
 }
-class Esportivo extends Carro{
-    constructor(modelo, placa, ano, cor, quilometragem, valor_diario, observacao, tempo, melhorias) {
-        super(modelo, placa, ano, cor, quilometragem, valor_diario, observacao);
-        this.tempo = tempo;
-        this.melhororias = melhorias
+class Sport extends Car{
+    constructor(model, plate, year, color, mileage, daily_value, observation, time, improvements) {
+        super(model, plate, year, color, mileage, daily_value, observation);
+        this.time = time;
+        this.improvements = improvements
     }
 }
-class Utilitario extends Carro{
-    constructor(modelo, placa, ano, cor, quilometragem, valor_diario, observacao, quantidade_passageiros, tamanho_bagageiro, km_litro) {
-        super(modelo, placa, ano, cor, quilometragem, valor_diario, observacao);
-        this.quantidade_passageiros = quantidade_passageiros;
-        this.tamanho_bagageiro = tamanho_bagageiro;
-        this.km_litro = km_litro;
+class Utilitary extends Car{
+    constructor(model, plate, year, color, mileage, daily_value, observation, passanger_capacity, trunk_capacity, miles_per_gallon) {
+        super(model, plate, year, color, mileage, daily_value, observation);
+        this.passanger_capacity = passanger_capacity;
+        this.trunk_capacity = trunk_capacity;
+        this.miles_per_gallon = miles_per_gallon;
     }
 }
 
-class Reserva {
-    constructor(cpf_cliente, status, dt_inicio, dt_fim) {
-        this.cpf_cliente = cpf_cliente;
+class Reservation {
+    constructor(client_cpf, status, start_date, end_date) {
+        this.client_cpf = client_cpf;
         this.status = status;
-        this.dt_inicio = dt_inicio;
-        this.dt_fim = dt_fim;
+        this.start_date = start_date;
+        this.end_date = end_date;
     }
 }
 
-class Promocao{
-    constructor(titulo, descricao, dt_validade){
-        this.titulo = titulo
-        this.descricao = descricao
-        this.dt_validade = dt_validade
+class specialOffer{
+    constructor(tittle, description, expiration_date){
+        this.tittle = tittle
+        this.description = description
+        this.expiration_date = expiration_date
     }
 }
 
-class Pessoa {
-    constructor(nome, cpf, email, telefone, endereco){
-        this.nome = nome;
+class Person {
+    constructor(name, cpf, email, phone, address){
+        this.name = name;
         this.cpf = cpf;
         this.email = email;
-        this.telefone = telefone;
-        this.endereco = endereco;
+        this.phone = phone;
+        this.address = address;
     }
 }
-class Funcionario extends Pessoa {
-    constructor(nome, cpf, email, telefone, endereco, idade, dt_contratacao, salario, qd_alugueis_mes = 0, status = false) {
-        super(nome, cpf, email, telefone, endereco);
-        this.idade = idade;
-        this.dt_contratacao = dt_contratacao;
-        this.salario = salario;
-        this.qd_alugueis_mes = qd_alugueis_mes;
+class Employee extends Person {
+    constructor(name, cpf, email, phone, address, age, hiring_date, salary, reservations_this_mounth = 0, status = false) {
+        super(name, cpf, email, phone, address);
+        this.age = age;
+        this.hiring_date = hiring_date;
+        this.salary = salary;
+        this.reservations_this_mounth = reservations_this_mounth;
         this.status = status;
     }
 }
-class Cliente extends Pessoa {
-    constructor(nome, cpf, email, telefone, endereco, dt_nascimento, nu_carteira, foto_carteira, dt_vencimento_carteira){
-        super(nome, cpf, email, telefone, endereco)
-        this.dt_nascimento = dt_nascimento
-        this.nu_carteira = nu_carteira
-        this.foto_carteira = foto_carteira
-        this.dt_vencimento_carteira = dt_vencimento_carteira
+class Client extends Person {
+    constructor(name, cpf, email, phone, address, birth_date, driverLicense_number, driverLicense_picture, driverLicense_expiration){
+        super(name, cpf, email, phone, address)
+        this.birth_date = birth_date
+        this.driverLicense_number = driverLicense_number
+        this.driverLicense_picture = driverLicense_picture
+        this.driverLicense_expiration = driverLicense_expiration
     }
 } 

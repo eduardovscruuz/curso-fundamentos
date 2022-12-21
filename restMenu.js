@@ -1,47 +1,47 @@
-class Menu{
+class restaurantInfo{
     
-    constructor(restaurante, endereco, pratos){
-        this.nome_restaurante = restaurante
-        this.endereco = endereco
-        this.pratos = pratos
+    constructor(restaurant, address, dish){
+        this.restaurant = restaurant
+        this.address = address
+        this.dish = dish
     }
-    getRestaurante(){
-        return this.restaurante}
+    getRestaurant(){
+        return this.restaurant}
 
-    getEndereco(){
-        return this.endereco}
+    getAddress(){
+        return this.address}
         
-    getPratos(){
-        return this.pratos}
+    getDish(){
+        return this.dish}
 }
 
-class Prato{
-    constructor(nome, descricao, imagem, valor){
-        this.nome = nome
-        this.descricao = descricao
-        this.imagem = imagem
-        this.valor = valor
+class Dish{
+    constructor(name, description, image, price){
+        this.name = name
+        this.description = description
+        this.image = image
+        this.price = price
     }
-    apresentar(){
-        console.log("Nome: " + this.getNome())
-        console.log("Descrição: " + this.getDescricao())
-        console.log("Valor: R$" + this.getValor())
+    present(){
+        console.log("Name: " + this.getName())
+        console.log("Description: " + this.getDescription())
+        console.log("Price: $" + this.getPrice())
     }
-    getNome(){
-        return this.nome}
+    getName(){
+        return this.name}
         
-    getDescricao(){
-        return this.descricao}
+    getDescription(){
+        return this.description}
         
-    getValor(){
-        return this.valor}
+    getPrice(){
+        return this.price}
 }
 
-const lasanha = new Prato("Lasanha", "Lasanha (lasagna em italiano) é um prato feito com camadas alternadas de massa, queijo e molho de carne ou outros.", "", 86.90)
+const lasagna = new Dish("Lasagna", "Dish made with several layers of lasagna sheets with sauce and other ingredients, such as meats and cheese, in between the lasagna noodles", "lasagna.jpeg", 50)
 
-const parmegiana = new Prato("Parmegiana", "Prato brasileiro composto por um pedaço de carne fatiado, empanado com farinha de trigo e ovos, coberto com queijo do tipo parmesão, presunto e bastante molho de tomate.", "", 129.90)
+const applePie = new Dish("Apple Pie", "Fruit pie in which the principal filling ingredient is apples. The earliest printed recipe is from England. Often served with whipped cream", "applepie.jpeg", 45)
 
-const menu = new Menu("Bistrô", "Rua Governador Reis, 150", [lasanha, parmegiana])
+const restaurant = new restaurantInfo("Bistro", "Location Avenue, 150", [lasagna, applePie])
 
-menu.getPratos()[0].apresentar()
-menu.getPratos()[1].apresentar()
+restaurant.getDish()[1].present()
+restaurant.getDish()[0].present()

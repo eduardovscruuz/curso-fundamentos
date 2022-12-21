@@ -1,23 +1,23 @@
-function listaDeNum(arrayNum){
+function evenOdd(arrayNum){
 
-    let pares = 0
-    let impares = 0
+    let even = 0 //pares
+    let odd = 0 //ímpares
     
         for(let i = 0; i < arrayNum.length; i++){
             
             if(arrayNum[i] < 0){
-                console.log("ALERT: Número negativo!");
+                console.log("STOP: Negative number!");
                 break
                 
             }else if (arrayNum[i] % 2 == 0){
-                pares+=1;
-                console.log("Número par")
+                even+=1;
+                console.log("Even")
                 
             }else if(arrayNum[i] % 2 == 1){
-            impares+=1;
-            console.log("Número ímpar")
+            odd+=1;
+            console.log("Odd")
             }
         }
-        
-    }
-    
+    console.log(even + " Even numbers in total")
+    console.log(odd + " Odd numbers in total")
+}

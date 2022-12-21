@@ -1,15 +1,15 @@
-function numPrimo(n) {
-    var divisores = 0 
+function primeNumber(n) {
+    var dividers = 0 
     for(i=1; i<=n; i++){
         if(n%i==0){
-            divisores++;
+            dividers++;
             }
         
-    } if(divisores==2){
-        console.log("é primo")
+    } if(dividers==2){
+        console.log("It's prime")
         
     } else {
-        console.log("Não é primo")
+        console.log("It's not prime")
         
     }
 }

@@ -1,9 +1,9 @@
-function sumNum(array) {    
+function sumArray(array) {    
     
-    let soma = 0
+    let sum = 0
     
     for(let i = 0; i < array.length; i++){
-        soma = soma + array[i]
+        sum = sum + array[i]
     }
-    console.log(soma)
+    console.log(sum)
 }

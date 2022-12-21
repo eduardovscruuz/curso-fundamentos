@@ -1,19 +1,15 @@
-function votar(idade){
+function voting(age){
     
-    if (idade>=18 && idade<=70){
-        console.log("obrigatorio votar")
+    if (age>=18 && age<=70){
+        console.log("Mandatory")
         
     }
-    else if (idade>=16 ){
-        console.log("opcional votar")
+    else if (age>=16 ){
+        console.log("Optional")
         
     }
     else{
-        console.log("Não pode votar")
+        console.log("Can't vote")
         
     }
 }
-
-votar(18)
-
-
