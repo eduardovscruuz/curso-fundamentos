@@ -14,3 +14,5 @@ restMenu       | Utilizando as classes, é possivel definir informações de dif
 salesPrize     | Recebe 3 parâmetros, onde você determnina o nome do vendedor, seu salário e as vendas do mês, irá retornar o total já somado
 sumArray       | Recebe um array de números, e realiza a soma de todos eles entre sim, retornando o total dessa soma
 voting         | Sistema de votação onde quem tem entre 18 e 70 anos, é obrigado à votar, quem tem entre 16 e 18 ou mais de 70 tem a opção de votar, e quem tem menos de 16 é proibido de votar
+
+PS: Os códigos estão todos em inglês pois quero me habituar à escrever dessa maneira, porém sinta-se livre pra alterar a linguagem
