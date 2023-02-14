@@ -1,4 +1,4 @@
-# cursoFundamentos
+# curso-fundamentos
 ## Exercícios realizados durante o curso "Fundamentos da Programação" na plataforma Awari, aos quais tinham à seguinte proposta:
 
 Arquivo .js    | O que ele faz?
